@@ -1,0 +1,77 @@
+html {
+    background-color: black;
+}
+
+.heading {
+    text-align: center;
+    color: #6d6d6d; 
+    font-weight: 700;
+}
+
+.cta {
+    text-align: center;
+    color: #6d6d6d;
+    font-size: 2.75rem;
+    line-height: 3.0rem;
+    
+}
+
+a#emaillink {
+    display: block;
+    text-align: center; 
+    color: #b9b9b9;
+    font-size: 2.75rem;
+}
+
+#bug {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10% 0% 10% 0%;
+}
+
+.st0 {
+    fill:#fff;
+}
+
+.st1 { 
+    fill:#00AEEF;
+}
+
+.st2 {
+    fill:#EC008C;
+}
+
+.st3 {
+    fill:#00A651;
+}
+
+.st4 {
+    fill:url(#SVGID_1_); 
+}
+
+.st5 { 
+    fill:url(#SVGID_2_);
+}
+
+.st6 {
+    fill:url(#SVGID_3_);
+}
+
+.st7 {
+    fill:url(#SVGID_4_);
+}
+
+.st8 {
+    fill:url(#SVGID_5_);
+}
+
+.st9 {
+    fill: #FFFFFF;
+    stroke: #000000;
+    stroke-miterlimit: 10;
+}
+
+#email {
+    color: 
+}
