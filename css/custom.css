@@ -1,35 +1,69 @@
-html {
-    background-color: black;
+svg.header-svg {
+    display: inline-block;
+    width: 177px; 
+    height: 52px;
+    padding: 0;
 }
 
-#logocontainer {
-	text-align: center;
-    margin: auto;
-    padding: 10% 0% 10% 0%;
+.float-right {
+    float: left;
 }
 
-a#buglink {
-	display: inline;
+.header-svg-logo {
+    fill: #000000;
 }
 
-.heading {
-    text-align: center;
-    color: #6d6d6d; 
+.nav-bar {
+    padding: 1%;
 }
 
-.cta {
-    text-align: center;
-    color: #6d6d6d;
-    font-size: 2.75rem;
-    line-height: 3.0rem;
-    
+.nav-item {
+    display: inline-block;
+    padding: 1%;
 }
 
-#emaillinkcontainer {
-    text-align: center; 
+.nav-link {
+    text-decoration: none;
+    color: #000000;
+    text-align: justify;
+    text-transform: uppercase;
 }
 
-a#emaillink {
-	color: #b9b9b9;
-    font-size: 2.75rem;
+a.nav-link:hover {
+    color: #000000;
+    border-bottom: 2px solid #72E6EB;
 }
+
+.knockout {
+    color: #FFFFFB;
+}
+
+.knockout-darker {
+    color: #C4C4BC
+}
+
+.footer-bg {
+    background-color: #1D2328;
+}
+
+svg.footer-svg {
+    width: 132px; 
+    height: 40px;
+}
+
+.footer-svg-logo {
+    fill: #FFFFFB;
+}
+
+.project-acceptance {
+    text-transform: uppercase;
+}
+.copyright-bg {
+    background-color: #0A161F;
+}
+
+.copyright-text {
+    color: #4D4D4D;
+}
+
+
