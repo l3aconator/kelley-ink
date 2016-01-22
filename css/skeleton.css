@@ -114,33 +114,45 @@
 
 @font-face {
   font-family: 'ATCOverlook-Regular';
-  src: url('../fonts/EOT/ATCOverlook-Regular.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/EOT/ATCOverlook-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/WOFF2/ATCOverlook-Regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/WOFF/ATCOverlook-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/TTF/ATCOverlook-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/SVG/ATCOverlook-Regular.svg') format('svg'); /* Legacy iOS */
+  src: url('../fonts/atc-overlook/EOT/ATCOverlook-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/atc-overlook/EOT/ATCOverlook-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/atc-overlook/WOFF2/ATCOverlook-Regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/atc-overlook/WOFF/ATCOverlook-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/atc-overlook/TTF/ATCOverlook-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/atc-overlook/SVG/ATCOverlook-Regular.svg') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
     font-family: 'ATCOverlook-RegularItalic';
-    src: url('../fonts/EOT/ATCOverlook-RegularItalic.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/EOT/ATCOverlook-RegularItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-        url('../fonts/WOFF2/ATCOverlook-RegularItalic-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-        url('../fonts/WOFF/ATCOverlook-RegularItalic.woff') format('woff'), /* Pretty Modern Browsers */
-        url('../fonts/TTF/ATCOverlook-RegularItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
-        url('../fonts/SVG/ATCOverlook-RegularItalic.svg') format('svg'); /* Legacy iOS */
+    src: url('../fonts/atc-overlook/EOT/ATCOverlook-RegularItalic.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/atc-overlook/EOT/ATCOverlook-RegularItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/atc-overlook/WOFF2/ATCOverlook-RegularItalic-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/atc-overlook/WOFF/ATCOverlook-RegularItalic.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/atc-overlook/TTF/ATCOverlook-RegularItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/atc-overlook/SVG/ATCOverlook-RegularItalic.svg') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
   font-family: 'ATCOverlook-Bold';
-    src: url('../fonts/EOT/ATCOverlook-Bold.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/EOT/ATCOverlook-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/WOFF2/ATCOverlook-Bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/WOFF/ATCOverlook-Bold.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/TTF/ATCOverlook-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/SVG/ATCOverlook-Bold.svg') format('svg'); /* Legacy iOS */
+    src: url('../fonts/atc-overlook/EOT/ATCOverlook-Bold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/atc-overlook/EOT/ATCOverlook-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/atc-overlook/WOFF2/ATCOverlook-Bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/atc-overlook/WOFF/ATCOverlook-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/atc-overlook/TTF/ATCOverlook-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/atc-overlook/SVG/ATCOverlook-Bold.svg') format('svg'); /* Legacy iOS */
 }
+
+@import url("//hello.myfonts.net/count/303282");
+
+  
+@font-face {
+    font-family: 'AmericanTypewriterStd-Med';
+    src: url('../fonts/american-typewriter/303282_0_0.eot');
+    src: url('../fonts/american-typewriter/303282_0_0.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/american-typewriter/303282_0_0.woff2') format('woff2'),
+        url('../fonts/american-typewriter/303282_0_0.woff') format('woff'),
+        url('../fonts/american-typewriter/303282_0_0.ttf') format('truetype');}
+ 
 
 
 /* Base Styles
@@ -149,40 +161,57 @@
 html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
-  font-size: 62.5%; }
+    font-size: 62.5%; 
+}
+
 body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
   font-family: 'ATCOverlook-Regular', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #222; }
+  color: #222; 
+}
 
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: 2rem;
-  font-weight: 300; }
-h1 { font-family: 'ATCOverlook-Bold', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;}
-h2 { font-family: 'ATCOverlook-Bold', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem; }
-h3 { font-family: 'ATCOverlook-Bold', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem; }
-h4 { font-family: 'ATCOverlook-Bold', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
-h5 { font-family: 'ATCOverlook-Bold', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
-h6 { font-family: 'ATCOverlook-Bold', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    color: #0A161F;
+}
+
+h1 { 
+    font-family: 'AmericanTypewriterStd-Med', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+    font-size: 4.0rem; 
+    line-height: 1.2;  
+    letter-spacing: -.1rem;
+}
+h2 { 
+    font-family: 'AmericanTypewriterStd-Med', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+    font-size: 3.6rem; 
+    line-height: 1.25; 
+    letter-spacing: -.1rem; 
+}
+h3 { font-family: 'AmericanTypewriterStd-Med', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem; }
+h4 { font-family: 'AmericanTypewriterStd-Med', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
+h5 { font-family: 'AmericanTypewriterStd-Med', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
+h6 { font-family: 'AmericanTypewriterStd-Med', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 
 /* Larger than phablet */
 @media (min-width: 550px) {
-  h1 { font-family: 'ATCOverlook-Bold', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 5.0rem; }
-  h2 { font-family: 'ATCOverlook-Bold', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 4.2rem; }
-  h3 { font-family: 'ATCOverlook-Bold', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 3.6rem; }
-  h4 { font-family: 'ATCOverlook-Bold', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 3.0rem; }
-  h5 { font-family: 'ATCOverlook-Bold', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 2.4rem; }
-  h6 { font-family: 'ATCOverlook-Bold', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 1.5rem; }
+  h1 { font-family: 'AmericanTypewriterStd-Med', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 5.0rem; }
+  h2 { font-family: 'AmericanTypewriterStd-Med', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 4.2rem; }
+  h3 { font-family: 'AmericanTypewriterStd-Med', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 3.6rem; }
+  h4 { font-family: 'AmericanTypewriterStd-Med', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 3.0rem; }
+  h5 { font-family: 'AmericanTypewriterStd-Med', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 2.4rem; }
+  h6 { font-family: 'AmericanTypewriterStd-Med', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 1.5rem; }
 }
 
 p {
-  margin-top: 0; }
+    color: #5B5F60;
+    margin-top: 0; }
 
 
 /* Links
@@ -200,23 +229,24 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  display: inline-block;
-  height: 38px;
-  padding: 0 30px;
-  color: #555;
-  text-align: center;
-  font-size: 11px;
-  font-weight: 600;
-  line-height: 38px;
-  letter-spacing: .1rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: transparent;
-  border-radius: 4px;
-  border: 1px solid #bbb;
-  cursor: pointer;
-  box-sizing: border-box; }
+    display: inline-block;
+    height: 44px;
+    padding: 0 44px;
+    color: #FFFFFB;
+    text-align: center;
+    font-family: 'ATCOverlook-Bold';
+    font-size: 1em;
+    line-height: 38px;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: #4BD6E5;
+    box-shadow: 0px 1px 3px 0px rgba(17,21,24,0.20);
+    cursor: pointer;
+    border: none;
+    box-sizing: border-box; 
+}
 .button:hover,
 button:hover,
 input[type="submit"]:hover,
@@ -227,9 +257,9 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: #333;
-  border-color: #888;
-  outline: 0; }
+    background: #43BBC5;
+    box-shadow: 0px -1px 3px 0px rgba(17,21,24,0.20);
+}
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
@@ -237,7 +267,7 @@ input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
   background-color: #33C3F0;
-  border-color: #33C3F0; }
+}
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -249,8 +279,17 @@ input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
   color: #FFF;
-  background-color: #1EAEDB;
-  border-color: #1EAEDB; }
+  background-color: #1EAEDB; 
+}
+
+.button .dark, {
+    background-color: #0A161F;
+}
+
+.button:hover .dark,
+.button:focus .dark, {
+    background-color: #0A161F;
+}
 
 
 /* Forms
@@ -390,11 +429,17 @@ form {
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .u-full-width {
-  width: 100%;
-  box-sizing: border-box; }
+    width: 100%;
+    box-sizing: border-box;
+}
 .u-max-full-width {
   max-width: 100%;
   box-sizing: border-box; }
+
+.u-half-width {
+    width: 50%;
+    box-sizing: border-box;
+}
 .u-pull-right {
   float: right; }
 .u-pull-left {
@@ -446,3 +491,145 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+
+/* Custom
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/*GLOBAL*/
+.cream-bg {
+     background-color: #FFFFFB;
+}
+
+.cream-gradient-bg {
+     background-image: linear-gradient(0deg, #F5F5E7 0%, #FFFFFB 47%);
+}
+
+.blue-gradient-bg {
+    background-image: linear-gradient(-180deg, #72E6EB 0%, #56DAE4 36%);
+}
+
+.black-gradient-bg {
+    background-image: linear-gradient(0deg, #0A161F 0%, #1D2328 100%);
+}
+.section-pad {
+    padding-top: 44px;
+    padding-bottom: 44px;
+}
+
+.footer-bg {
+    background-color: #1D2328;
+}
+
+.copyright-bg {
+    background-color: #0A161F;
+}
+
+/*GLOBAL HEADER*/
+.sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+    background-color: #FFFFFB;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+}
+.header-logo {
+    width: 100%;
+    display: block;
+    padding: .75em 0em .75em 0em;
+}
+
+.nav-list {
+    padding-top: 2.4em;
+}
+.nav-item {
+    font-family: 'AmericanTypewriterStd-Med';
+    font-size: 1em;
+    letter-spacing: .1em;
+    display: inline-block;
+    margin: .75em .75em 0em .75em;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000000;
+    text-align: justify;
+    text-transform: uppercase;
+    margin: 20px 10px 0px 20px;
+}
+
+a.nav-link:hover {
+    color: #000000;
+    border-bottom: 2px solid #72E6EB;
+}
+
+/*HOMEPAGE_HEADER*/
+
+.opening-heading {
+    font-size: 4.8em;
+    text-align: center;
+    padding: 80px 0px 0px 0px;
+}
+
+.opening-text {
+    text-align: center;
+    padding: 0px 200px 67px 200px;
+}
+
+@media (max-width: 750px) {
+    .opening-text {
+    text-align: center;
+    padding: 0;
+    } 
+}
+
+/*ABOUT*/
+.headshot {
+    display: block;
+    width: 100%;
+}
+
+.headshot-pad {
+    padding: 30px 60px 0px 60px;
+}
+
+@media (max-width: 550px) {
+    .headshot-pad {
+    padding: 44px 20px 44px 20px;
+}
+}
+
+/*SERVICES*/
+
+
+/*WORK*/
+.work-image {
+    width: 100%;
+    display: block;
+}
+
+.work-image:hover {
+    background-color: green;
+}
+
+/*FOOTER*/
+.knockout {
+    color: #FFFFFB;
+}
+
+.knockout-darker {
+    color: #C4C4BC
+}
+
+.project-acceptance {
+    text-transform: uppercase;
+}
+
+.copyright-text {
+    color: #4D4D4D;
+}
+
+
