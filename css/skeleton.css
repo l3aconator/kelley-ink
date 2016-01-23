@@ -282,13 +282,27 @@ input[type="button"].button-primary:focus {
   background-color: #1EAEDB; 
 }
 
-.button .dark, {
+.button.button-dark,
+button.button-dark,
+input[type="submit"].button-dark,
+input[type="reset"].button-dark,
+input[type="button"].button-dark {
     background-color: #0A161F;
 }
 
-.button:hover .dark,
-.button:focus .dark, {
-    background-color: #0A161F;
+.button.button-dark:hover,
+button.button-dark:hover,
+button.button-dark:hover,
+input[type="submit"].button-dark:hover,
+input[type="reset"].button-dark:hover,
+input[type="button"].button-dark:hover,
+.button.button-dark:focus,
+button.button-dark:focus,
+button.button-dark:focus,
+input[type="submit"].button-dark:focus,
+input[type="reset"].button-dark:focus,
+input[type="button"].button-dark:focus {
+    background-color: #000000;
 }
 
 
@@ -303,13 +317,15 @@ input[type="url"],
 input[type="password"],
 textarea,
 select {
-  height: 38px;
-  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
-  background-color: #fff;
-  border: 1px solid #D1D1D1;
-  border-radius: 4px;
-  box-shadow: none;
-  box-sizing: border-box; }
+    height: 66px;
+    padding: 22px 22px; /* The 6px vertically centers text on FF, ignored by Webkit */
+    background-color: #FFFFFB;
+    box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.20);
+    box-sizing: border-box;
+    border: none;
+    font-size: 1.467em;
+    color: #5B5F60;
+}
 /* Removes awkward default styles on some inputs for iOS */
 input[type="email"],
 input[type="number"],
@@ -323,9 +339,9 @@ textarea {
      -moz-appearance: none;
           appearance: none; }
 textarea {
-  min-height: 65px;
-  padding-top: 6px;
-  padding-bottom: 6px; }
+  min-height: 182px;
+  padding-top: 22px;
+  padding-bottom: 22px; }
 input[type="email"]:focus,
 input[type="number"]:focus,
 input[type="search"]:focus,
@@ -444,7 +460,6 @@ form {
   float: right; }
 .u-pull-left {
   float: left; }
-
 
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -566,6 +581,10 @@ a.nav-link:hover {
     border-bottom: 2px solid #72E6EB;
 }
 
+.subtitle {
+    text-align: center;
+}
+
 /*HOMEPAGE_HEADER*/
 
 .opening-heading {
@@ -603,7 +622,18 @@ a.nav-link:hover {
 }
 
 /*SERVICES*/
+.services {
+    color: #FFFFFB;
+}
 
+.services-brief {
+    color: #FFFFFB;
+}
+
+.icon {
+    margin-top: 22px;
+    width: 100%;
+}
 
 /*WORK*/
 .work-image {
@@ -611,25 +641,139 @@ a.nav-link:hover {
     display: block;
 }
 
-.work-image:hover {
-    background-color: green;
+.work-image-bg {
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 22px;
+    height: 213px;
+    width: 100%
+}
+
+/*
+.work-image-bg:hover {
+    background-image: linear-gradient(-180deg, rgb(130,236,243) 0%, rgba(75,214,229,0.60) 100%);
+    height: 213px;
+    width: 100%;
+    
+}
+*/
+
+.work-image-content {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+
+.work-image-bg:hover .work-image-content {
+    position: relative;
+    display: inline-block;
+    clip: auto;
+    height: 213px; 
+    width: 100%;
+}
+
+.work-one {
+    background-image: linear-gradient(-180deg, rgb(130,236,243 0.0) 0%, rgba(75,214,229,0.0) 100%),
+        url(../images/port_header_hric_website_color.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 22px;
+    height: 213px;
+    width: 100%
+}
+
+.work-one:hover {
+    background-image: linear-gradient(-180deg, rgb(130,236,243) 0%, rgba(75,214,229,0.60) 100%),
+        url(../images/port_header_hric_website_color.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 22px;
+    height: 213px;
+    width: 100%
 }
 
 /*FOOTER*/
-.knockout {
+
+.footer-section-pad {
+    padding-top: 44px;
+    padding-bottom: 11px;
+}
+
+@media (max-width: 800px) {
+    .footer-logo {
+    width: 100%;
+    display: block;
+    padding-bottom: 22px;
+    }
+}
+
+@media (max-width: 550px) {
+    .footer-logo {
+    width: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 22px;
+    }
+}
+
+@media (min-width: 801px) {
+ .footer-logo {
+    width: 50%;
+    display: block;
+    padding-bottom: 22px;
+    }   
+}
+
+.footer-nav-item {
+    list-style: none;
+}
+
+.footer-nav-link {
+    text-decoration: none;
+    color: #C4C4BC;
+}
+
+.footer-nav-link:hover {
+    text-decoration: none;
+    color: #FFFFFB;
+}
+
+.footer-head {
     color: #FFFFFB;
 }
 
 .knockout-darker {
-    color: #C4C4BC
+    color: #C4C4BC;
 }
 
-.project-acceptance {
+.project-avail {
+    font-family: 'ATCOverlook-Bold', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
     text-transform: uppercase;
+    color: #FFFFFB;
 }
 
 .copyright-text {
+    font-family:'AmericanTypewriterStd-Med', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 0.867em;
     color: #4D4D4D;
+    padding: 22px 0px 0px 0px;
+}
+
+.copyright-text a {
+    text-decoration: none;
+    color: #4D4D4D;
+}
+
+.copyright-text a:hover {
+    color: #707070;
 }
 
 
