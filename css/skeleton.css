@@ -190,11 +190,11 @@ h1 {
 }
 h2 { 
     font-family: 'AmericanTypewriterStd-Med', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-    font-size: 3.6rem; 
+    font-size: 1.8666666666666667rem; 
     line-height: 1.25; 
     letter-spacing: -.1rem; 
 }
-h3 { font-family: 'AmericanTypewriterStd-Med', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem; }
+h3 { font-family: 'AmericanTypewriterStd-Med', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 1.8666666666666667rem; line-height: 1.3;  letter-spacing: .05rem; }
 h4 { font-family: 'AmericanTypewriterStd-Med', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
 h5 { font-family: 'AmericanTypewriterStd-Med', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
 h6 { font-family: 'AmericanTypewriterStd-Med', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
@@ -351,7 +351,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #33C3F0;
+  border: 2px solid #0A161F;
   outline: 0; }
 label,
 legend {
@@ -369,6 +369,9 @@ label > .label-body {
   margin-left: .5rem;
   font-weight: normal; }
 
+::placeholder {
+    color: #DEDED8;
+}
 
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -458,6 +461,7 @@ form {
 }
 .u-pull-right {
   float: right; }
+
 .u-pull-left {
   float: left; }
 
@@ -570,14 +574,14 @@ there.
 
 .nav-link {
     text-decoration: none;
-    color: #000000;
+    color: #0A161F;
     text-align: justify;
     text-transform: uppercase;
     margin: 20px 10px 0px 20px;
 }
 
 a.nav-link:hover {
-    color: #000000;
+    color: #0A161F;
     border-bottom: 2px solid #72E6EB;
 }
 
@@ -618,7 +622,7 @@ a.nav-link:hover {
 @media (max-width: 550px) {
     .headshot-pad {
     padding: 44px 20px 44px 20px;
-}
+    }
 }
 
 /*SERVICES*/
@@ -636,67 +640,73 @@ a.nav-link:hover {
 }
 
 /*WORK*/
-.work-image {
+.work-image-box {
     width: 100%;
-    display: block;
-}
-
-.work-image-bg {
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding: 22px;
     height: 213px;
-    width: 100%
-}
-
-/*
-.work-image-bg:hover {
-    background-image: linear-gradient(-180deg, rgb(130,236,243) 0%, rgba(75,214,229,0.60) 100%);
-    height: 213px;
-    width: 100%;
-    
-}
-*/
-
-.work-image-content {
-    position: absolute;
     overflow: hidden;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    width: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 1s ease-out;
+    margin-bottom: 33px;
 }
 
-
-.work-image-bg:hover .work-image-content {
-    position: relative;
-    display: inline-block;
-    clip: auto;
-    height: 213px; 
+.work-image-box.large {
     width: 100%;
+    height: 305px;
+    overflow: hidden;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 1s ease-out;
+    margin-bottom: 33px;
 }
 
 .work-one {
-    background-image: linear-gradient(-180deg, rgb(130,236,243 0.0) 0%, rgba(75,214,229,0.0) 100%),
-        url(../images/port_header_hric_website_color.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding: 22px;
-    height: 213px;
-    width: 100%
+    background-image: url(../images/portfolio-small-placeholder.png);
 }
 
-.work-one:hover {
-    background-image: linear-gradient(-180deg, rgb(130,236,243) 0%, rgba(75,214,229,0.60) 100%),
-        url(../images/port_header_hric_website_color.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding: 22px;
-    height: 213px;
-    width: 100%
+.work-one {
+    background-image: url(../images/portfolio-small-placeholder.png);
 }
+
+.work-image-box:hover {
+    background: linear-gradient(-180deg, #72E6EB 0%, #56DAE4 36%);
+    opacity: 0.75;
+}
+
+.work-image-content {
+    opacity: 0;
+}
+
+.work-image-box:hover .work-image-content {
+    opacity: 1;
+}
+
+a.work-link {
+    text-decoration: none;
+    display: block;
+}
+
+.work-caption {
+    padding: 22px;
+    color: #0A161F;
+}
+
+.work-title {
+    display: block;
+    font-family: 'AmericanTypewriterStd-Med', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+    line-height: 1em;
+    margin-bottom: 11px;
+}
+
+.work-body {
+    display: block;
+}
+
+/*WORK_POSTS*/
+
 
 /*FOOTER*/
 
