@@ -83,3 +83,13 @@ $(window).scroll(function() {
 
 	$(document).ready($.proxy(anchorScrolls, 'init'));
 })(window.document, window.history, window.location);
+
+
+$(function(){
+  $(".element").typed({
+    contentType: 'html',
+    strings: ["Words, matter.<span class='typed-cursor'>|</span>"],
+    typeSpeed: 150,
+    showCursor: false,
+  });
+});
