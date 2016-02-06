@@ -525,7 +525,8 @@ form {
 .u-pull-left {
   float: left; }
 
-.u-button-center {
+.u-button-center,
+.u-icon-center {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -616,6 +617,10 @@ there.
 
 .link-knockout:hover {
     color: #F4F4E8;
+}
+
+.knockout {
+    color: #FFFFFB;
 }
 
 /*GLOBAL HEADER*/
@@ -837,6 +842,82 @@ a.work-link {
 }
 
 /*WORK_POSTS*/
+
+.work-post-header-image-wrap {
+    position: relative;
+    display: block;
+    height: 200px;
+}
+
+.work-post-header-image-wrap .top {
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.work-post-header-image-wrap:hover .top {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.work-post-header-image {
+    width: 100%;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+}
+
+.work-project-overview-bg {
+    padding-top: 124px;
+}
+
+.work-post-heading {
+    color: #FFFFFB;
+}
+
+.work-post-discipline-heading {
+    color: #FFFFFB;
+    text-align: center;
+}
+
+.work-post-icon {
+    display: block;
+    padding: 44px 0px;
+}
+
+
+.work-post-discipline-body {
+    color: #C4C4BC;
+    text-align: center;
+}
+
+.work-post-key-feature-image-wrap {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.work-post-key-feature-image {
+    width: 100%;
+    display: block;
+}
+
+.work-post-feature-name-wrap {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+.work-post-key-feature-heading {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    width: 100%;
+}
 
 
 /*FOOTER*/
