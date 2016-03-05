@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6 (26304) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval 1 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="75.0084937%" cy="50%" fx="75.0084937%" fy="50%" r="75.9492217%" id="radialGradient-1">
+            <stop stop-color="#4BD6E1" offset="0%"></stop>
+            <stop stop-color="#7FEBEE" offset="100%"></stop>
+        </radialGradient>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.0705882353   0 0 0 0 0.0823529412   0 0 0 0 0.0941176471  0 0 0 0.14 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="1.0_Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" filter="url(#filter-2)">
+        <g id="1.3.1-Work_Template_Desktop_One_Pager_Rev-1.00" transform="translate(-969.000000, -885.000000)" fill="url(#radialGradient-1)">
+            <g id="Group-5" transform="translate(972.000000, 885.000000)">
+                <circle id="Oval-1-Copy" cx="10" cy="12" r="10"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
